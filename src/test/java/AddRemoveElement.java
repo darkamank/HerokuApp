@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class AddRemoveElement extends Base {
+public class AddRemoveElement extends BaseTest {
     @Test
     public void addAndRemoveElements(){
 

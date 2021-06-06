@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 
-public class Hovers extends Base{
+public class Hovers extends BaseTest{
 
     @Test
     public void checkAllUsers(){

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Typo extends Base{
+public class Typo extends BaseTest{
 
     @Test
     public void checkTypo(){
