@@ -3,7 +3,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SortableDataTables extends Base{
+public class SortableDataTables extends BaseTest{
 
     @Test
     public void checkFirstTable(){
