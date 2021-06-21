@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework Anton Sidorik</title>
+</head>
+<body>
+<div class="table">
+	<h2>Nominees for the best player in the world</h2>
+		<table>
+		<tr>
+			<th>Number</th>
+			<th>Player</th>
+			<th>Football Club</th>
+			<th>Goals</th>
+			<th>Champions league cups</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Cristiano Ronaldo</td>
+			<td>Juventus <img src="https://image.flaticon.com/icons/png/512/738/738693.png" width="20" height="20"></td>
+			<td>48</td>
+			<td>4 <img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"><img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"><img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"><img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"></td>
+
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Lionel Messi</td>
+		    <td>Barcelona <img src="https://image.flaticon.com/icons/png/512/738/738657.png" width="20" height="20"></td>
+		    <td>45</td>
+		    <td>4 <img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"><img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"><img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"><img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Neymar</td>
+		    <td>PSG <img src="https://lh3.googleusercontent.com/dtFuCbfBxODq263Ramrmu-7jXxjsdL2YdyXA243PtwLr2U5xOAaUi63FwSgDRKuNTXCyPEyghjW-D2EVlfjnp4HU" width="25" height="25"></td>
+		    <td>38</td>
+		    <td>1 <img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>R.Levandowski</td>
+		    <td>Bayern Munich <img src="https://image.flaticon.com/icons/png/512/824/824720.png" width="20" height="20"></td>
+		    <td>45</td>
+		    <td>1 <img src="https://image.flaticon.com/icons/png/512/2817/2817756.png" width="20" height="20"></td>
+		</tr>
+	</table>
+</div><br><br><br>
+
+<div class="vote">
+	<h2>Vote for the player</h2>
+	<p>Enter your <b>Last Name</b> and the <b>number</b> of the player you are voting for</p>
+	  
+	  <form action="/action_page.php">
+	  <label for="idplayer">Player's number:</label><br>
+	  <input type="number" id="idplayer" name="idplayer"><br>
+	  <label for="lname">Your Last name:</label><br>
+	  <input type="text" id="lname" name="lname"><br><br>
+	  <input type="submit" value="Vote">
+	</form>
+</div><br><br>
+
+<div class="radio">
+	<h2>Anonymous voting</h2>
+	<p>Choose your favorite player</p>
+	<form action="/action_page.php">
+  <input type="radio" id="Ronaldo" name="player">
+  <label for="Ronaldo">Cristiano Ronaldo</label> <a href="https://ru.wikipedia.org/wiki/Cristiano Ronaldo">[Read More]</a><br>
+  <input type="radio" id="Messi" name="player" value="Messi">
+  <label for="Massi">Lionel Messi</label> <a href="https://ru.wikipedia.org/wiki/Lionel Messi">[Read More]</a><br>
+  <input type="radio" id="Neymar" name="player" value="Neymar">
+  <label for="Neymar">Neymar</label> <a href="https://ru.wikipedia.org/wiki/Neymar">[Read More]</a><br>
+  <input type="radio" id="Robert" name="player" value="Robert">
+  <label for="Lewandowski">R.Lewandowski</label> <a href="https://ru.wikipedia.org/wiki/Robert Lewandowski">[Read More]</a><br><br>
+  <input type="submit" value="Submit">
+</form> </div>
+
+<div class="selectInfo">
+	<h2>Read more information about players</h2>
+	<p>You can choose any players and read more information about his statistics</p>
+	<form action="/action_page.php">
+		<label for="name">Choose player</label>
+		<select name="info" id="info">
+			<option value="ronaldo">Cristiano Ronaldo</option>
+			<option value="messi">Lionel Messi</option>
+			<option value="neymar">Neymar</option>
+			<option value="lewandowski">R.Lewandowski</option>
+		</select><br><br>
+
+		<input type="submit" value="Read">
+		
+	</form>
+</div>
+
+<style type="text/css">
+	.table {
+		float: left;
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 50%;
+		  margin-right: 5px;
+	}
+
+	td, th {
+		  border: 2px solid #dddddd;
+		  text-align: left;
+		  padding: 10px;
+	}
+	tr:nth-child(odd){
+		background-color: lightgrey;
+	}
+	.vote {
+		float: none;
+		font-family: arial, sans-serif;
+	}
+	.radio {
+		float: left;
+        font-family: arial, sans-serif;
+        width: 50%;
+	}
+	.selectInfo {
+	font-family: arial, sans-serif;	
+	}
+
+
+</style>
+</body>
+</html>
