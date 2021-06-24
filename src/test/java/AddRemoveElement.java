@@ -9,8 +9,7 @@ import java.util.List;
 
 public class AddRemoveElement extends BaseTest {
     @Test
-    public void addAndRemoveElements(){
-
+    public void addAndRemoveElements() {
         driver.get("http://the-internet.herokuapp.com/add_remove_elements/");
         WebElement buttonAdd = driver.findElement(By.cssSelector("[onclick= 'addElement()']"));
         buttonAdd.click();
