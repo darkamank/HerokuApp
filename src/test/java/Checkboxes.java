@@ -5,10 +5,10 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Checkboxes extends BaseTest{
+public class Checkboxes extends BaseTest {
 
     @Test
-    public void check(){
+    public void check() {
         driver.get("http://the-internet.herokuapp.com/checkboxes");
         List<WebElement> checkboxes = driver.findElements(By.cssSelector("[type=checkbox]"));
         Assert.assertFalse(checkboxes.get(0).isSelected(),"First Checkbox is selected");
